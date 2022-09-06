@@ -8,6 +8,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.firebase_beers.R
 import com.example.firebase_beers.databinding.ActivityMainBinding
+import com.example.firebase_beers.model.BeerModelItem
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -21,6 +22,10 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         val viewModel by viewModels<MainViewModel>()
+
+        /*viewModel.insertIntoDatabase(BeerModelItem(name = "Keepasda"))
+        viewModel.insertIntoDatabase(BeerModelItem(name = "Kappa"))
+        viewModel.insertIntoDatabase(BeerModelItem(name = "Kaasdasdasdappa"))*/
 
         //viewModel.nukeData()
         val navHostFragment = supportFragmentManager

@@ -40,26 +40,20 @@ class FavouriteFragment: Fragment() {
         val layoutManager = LinearLayoutManager(context)
         recycler.layoutManager = layoutManager
 
-        val adapter = FavAdapter(viewModel.favList,requireActivity(),viewModel)
+        val adapter = FavAdapter(requireActivity(),viewModel)
+
         viewModel.readFav.observe(requireActivity()){
             for (beer in it){
                 viewModel.favList.add(beer.beerModel)
             }
-
             recycler.adapter = adapter
             adapter.notifyDataSetChanged()
         }
-
 
         binding.button.setOnClickListener(){
             viewModel.nukeData()
-            recycler.adapter = adapter
-            adapter.notifyDataSetChanged()
+            viewModel.favList.clear()
         }
-
-
-
-
         return binding.root
     }
 }
