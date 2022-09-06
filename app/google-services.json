@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "615712074359",
+    "project_id": "beerapi-7e081",
+    "storage_bucket": "beerapi-7e081.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615712074359:android:49cbacebb2295c97b0f472",
+        "android_client_info": {
+          "package_name": "com.example.firebase_beers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615712074359-u9f3a4eiel8slme7hm7323p62gfbgpn7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebase_beers",
+            "certificate_hash": "df3ade19fa144155cd3eccc7efce8f9a7cba098d"
+          }
+        },
+        {
+          "client_id": "615712074359-bmnac9u2fligphlj8mg2jrvo1860ktfd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_4elyoOUCnnQarQFcQ4Iih5GcyJ4WOqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615712074359-bmnac9u2fligphlj8mg2jrvo1860ktfd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
