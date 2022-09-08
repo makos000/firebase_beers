@@ -43,6 +43,10 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
         val viewModel by viewModels<MainViewModel>()
         binding = FragmentLoginBinding.bind(view)
 
+        binding.continueButton.setOnClickListener(){
+            this.findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
+        }
+
         auth = Firebase.auth
 
         val signupButton = binding.signupButton

@@ -41,7 +41,7 @@ class MainAdapter(val favList: ArrayList<BeerModelItem>,val context: Context, va
 
         //viewModel.delSpecific(curItem)
 
-        for (item in favList){
+        for (item in viewModel.favList){
             if(curItem.name == item.name){
                 curItem.fav = true
             }
@@ -62,6 +62,8 @@ class MainAdapter(val favList: ArrayList<BeerModelItem>,val context: Context, va
                 viewModel.insertIntoDatabase(curItem)
             }
             else{
+                viewModel.favList.remove(curItem)
+
                 curItem.fav = false
                 binding.favButton.setBackgroundResource(R.drawable.star_fill0)
                 notifyDataSetChanged()
